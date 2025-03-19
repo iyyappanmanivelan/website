@@ -1,3 +1,7 @@
+html , body{
+    background-color: #000000 !important;
+}
+
 
 .brand-logo img{
     width: 100px;
@@ -8,12 +12,13 @@
 }
 .intro-clip{
     top: 0px;
-    z-index: -1;
+    z-index: 1;
 }
 .navview a{
     color: #ffff !important;
     font-weight: 700;
     font-size: 18px;
+    text-decoration: none !important;
 }
 .mainframe{
     height: 854px !important;
@@ -26,6 +31,7 @@
 }
 .wave-container{
     top: 170px;
+    z-index: 1;
 }
 .wave-text span{
     background-image: linear-gradient(#FFFFFF , #000000);
@@ -97,7 +103,7 @@
     background-image: linear-gradient(#FFFFFF , #000000);
     color: transparent;
     background-clip: text;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 
 }
 .wh-explain p{
@@ -105,7 +111,7 @@
     font-weight: 400;
     margin: 15px 0px;
 }
-.whoweare , .missionsec , .portfoliosec{
+.whoweare , .missionsec , .portfoliosec , .footer-sec{
     padding: 80px 0px;
     background-color: #000000;
     color: white;
@@ -116,4 +122,115 @@
 .pv video{
     height:500px;
     width: 100%;
+}
+.inpt-grp input , .inpt-grp select , .inpt-grp textarea {
+    border: 2px solid #fff;
+    background-color: #000000;
+    color: white;
+    margin: 20px 0px;
+    padding: 20px;
+}
+.inpt-grp input::placeholder , .inpt-grp textarea::placeholder{
+    color: #fff;
+}
+.form-table{
+    width: 1000px;
+}
+.submit-btn button{
+    width: 300px;
+    padding: 15px 0px;
+    font-weight: 650;
+}
+.brand-img{
+    width: 200px;
+}
+.eq-send{
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+    border-radius: 0px;
+ 
+    
+
+}
+.eq-send button , .eq-send button:hover{
+    font-weight: 600;
+    color: #000000 ;
+}
+.eq-type input ,.eq-type input:focus{
+    background-color: #000000;
+    border: 2px solid #ffff;
+    border-radius: 0px;
+    color: #fff;
+}
+.footer-title{
+    padding: 30px 0px
+}
+.wt-img{
+    width: 120px;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 80px; 
+}
+.free{
+    padding-top: 100px;
+}
+.wt-info{
+    width: 700px;
+}
+.wt-info h5{
+    font-size: 20px;
+}
+.heading-name h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.serv-box{
+    height: 400px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+.serv-img img{
+    height: 270px !important;
+    cursor: pointer;
+    border-radius: 20px 20px 0px 0px;
+}
+.serv-box:hover .serv-overlay{
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.serv-overlay{
+    top: 0px;
+    width: 100%;
+    height: 0px;
+    border-radius: 20px 20px 0px 0px;
+    background: #3c3a3acc;
+    transition: all 0.5s ease-in-out;
+}
+.serv-info{
+    text-align: center;
+    cursor: pointer;
+}
+.serv-info p{
+    font-size: 20px;
+    line-height: 25px;
+    padding: 15px;
+}
+.serv-title {
+    top: 120px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 650;
+    display: none;
+    transition: all 3s ease-in-out;
+    cursor: pointer;
+}
+.serv-box:hover .serv-title{
+    display: block;
+    transition: all 3s ease-in-out;
+   
 }

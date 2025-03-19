@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../Constants/Navbar";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -25,9 +26,11 @@ function Header() {
                 {
                     Navbar.navlink.map((data , i)=>{
                         return(
-                            <a key={i} className="nav-item nav-link " href="#">
-                            {data}
+                           <Link to={data?.link}>
+                             <a key={i} className="nav-item nav-link " href="#">
+                            {data.link_name}
                           </a>
+                           </Link>
                         )
                     })
                 }

@@ -5,11 +5,11 @@ import { ChevronBarDown } from "react-bootstrap-icons";
 function Mainframe() {
   return (
     <section className="mainframe position-relative ">
-          <Header />
+         
 
     <div className="intro-clip position-absolute">
       <video
-        src="\video\intro-clip.mp4"
+        src="video\intro-clip.mp4"
         className="img-fluid"
         loop
         autoPlay
