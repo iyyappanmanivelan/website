@@ -6,19 +6,24 @@ import Aboutus from "../Pages/Aboutus";
 import Service from "../Pages/Service";
 import Portfolio from "../Pages/Portfolio";
 import Contact from "../Pages/Contact";
+import MaintenanceNotice from "../Pages/Testing";
+
 
 function Approutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Mainroutes />}>
+        {/* <Route element={<Mainroutes />}>
         <Route path="/"  element={<Home/>}/>
         <Route path="/about" element={<Aboutus/>}/>
         <Route path="/service" element={<Service/>}/>
         <Route path="/portfolio" element={<Portfolio/>}/>
         <Route path="/contact" element={<Contact/>}/>
+
         
-        </Route>
+        </Route> */}
+
+        <Route path="/" element={<MaintenanceNotice />} />
       </Routes>
     </BrowserRouter>
   );
